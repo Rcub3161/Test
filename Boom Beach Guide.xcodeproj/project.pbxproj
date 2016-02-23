@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		94E4F8E11C7BCCD40016D650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4F8E01C7BCCD40016D650 /* AppDelegate.swift */; };
-		94E4F8E31C7BCCD40016D650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4F8E21C7BCCD40016D650 /* ViewController.swift */; };
 		94E4F8E61C7BCCD40016D650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E4F8E41C7BCCD40016D650 /* Main.storyboard */; };
 		94E4F8E81C7BCCD40016D650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E4F8E71C7BCCD40016D650 /* Assets.xcassets */; };
 		94E4F8EB1C7BCCD40016D650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E4F8E91C7BCCD40016D650 /* LaunchScreen.storyboard */; };
 		94E4F8F61C7BCCD40016D650 /* Boom_Beach_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4F8F51C7BCCD40016D650 /* Boom_Beach_GuideTests.swift */; };
 		94E4F9011C7BCCD40016D650 /* Boom_Beach_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4F9001C7BCCD40016D650 /* Boom_Beach_GuideUITests.swift */; };
+		94E4F9131C7BCF710016D650 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4F9121C7BCF710016D650 /* HomePageViewController.swift */; };
+		94E4F9181C7BD2050016D650 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4F9171C7BD2050016D650 /* HomeCell.swift */; };
+		94E4F91A1C7BD5A00016D650 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4F9191C7BD5A00016D650 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		94E4F8DD1C7BCCD30016D650 /* Boom Beach Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boom Beach Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E4F8E01C7BCCD40016D650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94E4F8E21C7BCCD40016D650 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94E4F8E51C7BCCD40016D650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94E4F8E71C7BCCD40016D650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E4F8EA1C7BCCD40016D650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		94E4F8FC1C7BCCD40016D650 /* Boom Beach GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boom Beach GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E4F9001C7BCCD40016D650 /* Boom_Beach_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boom_Beach_GuideUITests.swift; sourceTree = "<group>"; };
 		94E4F9021C7BCCD40016D650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E4F9121C7BCF710016D650 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		94E4F9171C7BD2050016D650 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		94E4F9191C7BD5A00016D650 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,11 @@
 		94E4F8DF1C7BCCD30016D650 /* Boom Beach Guide */ = {
 			isa = PBXGroup;
 			children = (
+				94E4F90F1C7BCD910016D650 /* API */,
+				94E4F9111C7BCDA00016D650 /* Models */,
+				94E4F90E1C7BCD8D0016D650 /* Views */,
+				94E4F9101C7BCD980016D650 /* View Controllers */,
 				94E4F8E01C7BCCD40016D650 /* AppDelegate.swift */,
-				94E4F8E21C7BCCD40016D650 /* ViewController.swift */,
 				94E4F8E41C7BCCD40016D650 /* Main.storyboard */,
 				94E4F8E71C7BCCD40016D650 /* Assets.xcassets */,
 				94E4F8E91C7BCCD40016D650 /* LaunchScreen.storyboard */,
@@ -123,6 +130,37 @@
 				94E4F9021C7BCCD40016D650 /* Info.plist */,
 			);
 			path = "Boom Beach GuideUITests";
+			sourceTree = "<group>";
+		};
+		94E4F90E1C7BCD8D0016D650 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94E4F9171C7BD2050016D650 /* HomeCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		94E4F90F1C7BCD910016D650 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		94E4F9101C7BCD980016D650 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94E4F9121C7BCF710016D650 /* HomePageViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		94E4F9111C7BCDA00016D650 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94E4F9191C7BD5A00016D650 /* Home.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E4F8E31C7BCCD40016D650 /* ViewController.swift in Sources */,
+				94E4F9131C7BCF710016D650 /* HomePageViewController.swift in Sources */,
+				94E4F9181C7BD2050016D650 /* HomeCell.swift in Sources */,
+				94E4F91A1C7BD5A00016D650 /* Home.swift in Sources */,
 				94E4F8E11C7BCCD40016D650 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
