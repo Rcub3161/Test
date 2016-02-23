@@ -17,9 +17,10 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.homeTableView.delegate = self
         self.homeTableView.dataSource = self
+        homes = [Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home()]
         self.homeTableView.reloadData()
         // Do any additional setup after loading the view.
     }
