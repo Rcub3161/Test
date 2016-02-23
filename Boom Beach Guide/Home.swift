@@ -10,7 +10,8 @@ import UIKit
 
 class Home: NSObject {
     
-    
+    var dictionary: NSDictionary
+    var logo: NSArray
     var logoImage: [String] = [
         "armory.png",
         "Mortar.png",
@@ -38,6 +39,9 @@ class Home: NSObject {
         "Upgrade Progress",
         "Other"
     ]
-
+    init(logoImage : Array, content : Array) {
+        self.logoImage = logoImage
+        self.content = content
+    }
     
 }

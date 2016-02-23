@@ -31,7 +31,8 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("homeCell", forIndexPath: indexPath) as? HomeCell
-        cell!.homes = Home[indexPath.row]
+        cell!.homes = homes[indexPath.row]
+        
         return cell!
     }
     
