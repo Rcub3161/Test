@@ -15,9 +15,8 @@ class HomeCell: UITableViewCell {
     
     var homes: Home! {
         didSet{
-            contentImage.image = UIImage(named: homes.logoImage[1])
-            contentLabel.text = homes.content[1]
-            
+            contentImage.image = UIImage(named: homes.homeDisplayImage())
+            contentLabel.text = homes.homeContent()
         }
     }
     override func awakeFromNib() {

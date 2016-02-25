@@ -46,4 +46,15 @@ class Home: NSObject {
         }
         
     }*/
+    func homeDisplayImage() -> String  {
+        for var i = 0; i < 12; i++ {
+            return logoImage[i]
+        }
+    }
+    
+    func homeContent() -> String {
+        for var i = 0; i < 12; i++ {
+            return content[i]
+        }
+    }
 }

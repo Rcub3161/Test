@@ -20,7 +20,7 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.homeTableView.delegate = self
         self.homeTableView.dataSource = self
-        homes = [Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home(), Home()]
+        homes = [Home()]
         self.homeTableView.reloadData()
         // Do any additional setup after loading the view.
     }
